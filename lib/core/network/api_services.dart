@@ -11,15 +11,14 @@ abstract class ApiServices {
 }
 
 class ApiServicesImpl implements ApiServices {
-// final DioFactory _dioFactory;
-//
-// ApiServicesImpl(this._dioFactory);
+  final Dio _dio;
+
+  ApiServicesImpl(this._dio);
 
   @override
   Future<ApiResult<MoviesResponse>> fetchPopularMovies() async {
     print('Fetching popular movies');
-    Dio dio = DioFactory.getDio();
-    Response response = await dio.get(popularMoviesEndPoint);
+    Response response = await _dio.get(popularMoviesEndPoint);
     if (response.statusCode == 200) {
       return ApiResult.success(MoviesResponse.fromJson(response.data));
     } else {
@@ -29,9 +28,9 @@ class ApiServicesImpl implements ApiServices {
           success: false));
     }
   }
-    // @override
-    // Future<MoviesResponse?> fetchTopRatedMovies() {
-    //   print('Fetching top rated movies');
-    //   return null;
-    // }
-  }
+// @override
+// Future<MoviesResponse?> fetchTopRatedMovies() {
+//   print('Fetching top rated movies');
+//   return null;
+// }
+}

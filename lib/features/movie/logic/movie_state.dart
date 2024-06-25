@@ -1,6 +1,13 @@
-part of 'movie_cubit.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:movie_app/core/network/api_error_handler.dart';
 
-@immutable
-sealed class MovieState {}
+part 'movie_state.freezed.dart';
 
-final class MovieInitial extends MovieState {}
+@freezed
+class MovieState<T> with _$MovieState<T> {
+  const factory MovieState.initial() = MovieInitial;
+  const factory MovieState.loading() = MovieLoading;
+  const factory MovieState.success(T data) = MovieSuccess<T>;
+  const factory MovieState.error({required ApiErrorHandler error}) = MovieError;
+}
+
