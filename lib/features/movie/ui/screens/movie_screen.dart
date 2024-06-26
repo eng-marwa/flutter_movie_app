@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/features/movie/ui/widgets/app_bar.dart';
+import 'package:movie_app/features/movie/ui/widgets/now_showing.dart';
 
 class MovieScreen extends StatelessWidget {
   const MovieScreen({super.key});
@@ -7,7 +8,8 @@ class MovieScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(body: SafeArea(child: SingleChildScrollView(child: Column(children: [
-      MovieAppBar(),
+     MovieAppBar(),
+     NowShowing(),
     ],),)),);
 
   }
