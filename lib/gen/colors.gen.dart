@@ -13,11 +13,20 @@ import 'package:flutter/material.dart';
 class ColorName {
   ColorName._();
 
+  /// Color: #000000
+  static const Color blackColor = Color(0xFF000000);
+
   /// Color: #E5E4EA
   static const Color borderColor = Color(0xFFE5E4EA);
 
   /// Color: #AAA9B
   static const Color greyAAColor = Color(0xAAA9B);
+
+  /// Color: #88A4E8
+  static const Color indigoColor = Color(0xFF88A4E8);
+
+  /// Color: #DBE3FF
+  static const Color lightIndigoColor = Color(0xFFDBE3FF);
 
   /// Color: #FF0000
   static const Color redColor = Color(0xFFFF0000);
