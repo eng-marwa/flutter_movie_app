@@ -42,13 +42,13 @@ Run the application:
 
 ## Flutter Features
 
-*     Bloc State Management(cubit)
-*     Dio Http Client
-*     Retrofit
-*     GetIt Dependency Injection
-*     Injectable Dependency Injection
-*     flutter gen
-*     freezed
+* Bloc State Management(cubit)
+* Dio Http Client
+* GetIt Dependency Injection
+* Injectable Dependency Injection
+* flutter gen
+* freezed
 
   ## Screen Shots
-  <Table><tr></tr><td><img src='https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720038149.png'/></td><td></td>tr><img src='https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720039050.png'/></tr></Table>
+  <Table><tr></tr><td><img src='https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720039050.png' width=100 height=100/></td><td></td>tr><img src='https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720038149.png' width=100 height=100/></tr></Table>
+
