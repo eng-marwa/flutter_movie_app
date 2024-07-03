@@ -14,6 +14,7 @@ class Assets {
   static const String imagesClock = 'assets/images/clock.svg';
   static const String imagesMenu = 'assets/images/Menu.svg';
   static const String imagesNotif = 'assets/images/Notif.svg';
+  static const String imagesPlay = 'assets/images/play.svg';
   static const String imagesStar = 'assets/images/Star.svg';
 
 }

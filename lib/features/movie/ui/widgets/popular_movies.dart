@@ -20,7 +20,7 @@ class PopularMovies extends StatelessWidget {
     return BlocProvider(
         create: (context) => getIt<PopularMoviesCubit>()..emitStates(),
         child: Padding(
-          padding: EdgeInsets.only(left: 24.w,right: 24.w, bottom: 8.h),
+          padding: EdgeInsets.only(left: 24.w, right: 24.w, bottom: 8.h),
           child: SizedBox(
               width: double.infinity,
               height: 330.h,
@@ -92,12 +92,15 @@ class PopularMovies extends StatelessWidget {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              SizedBox(width: 150.w,
-                                                child: Text('${results[index].title}',
+                                              SizedBox(
+                                                width: 150.w,
+                                                child: Text(
+                                                    '${results[index].title}',
                                                     maxLines: 2,
                                                     overflow:
                                                         TextOverflow.ellipsis,
-                                                    style: TextStyles.movieName),
+                                                    style:
+                                                        TextStyles.movieName),
                                               ),
                                               SizedBox(
                                                 height: 4.h,
@@ -117,23 +120,32 @@ class PopularMovies extends StatelessWidget {
                                               SizedBox(
                                                 height: 4.h,
                                               ),
-                                              // SliverList(
-                                              //     delegate: SliverChildBuilderDelegate(childCount: 3,
-                                              //         (context, index) => Container(
-                                              //             padding: EdgeInsets
-                                              //                 .symmetric(
-                                              //                     vertical: 4.h,
-                                              //                     horizontal:
-                                              //                         12.w),
-                                              //             decoration: BoxDecoration(
-                                              //                 color: ColorName
-                                              //                     .lightIndigoColor,
-                                              //                 borderRadius:
-                                              //                     BorderRadius.circular(
-                                              //                         16.r)),
-                                              //             child: Text('Action',
-                                              //                 style: TextStyles
-                                              //                     .tags)))),
+                                              Wrap(
+                                                children: List.generate(
+                                                    results[index]
+                                                        .genreIds!
+                                                        .length>3?3: results[index]
+                                                        .genreIds!
+                                                        .length,
+                                                    (i) => Container(
+                                                        margin: EdgeInsets.only(
+                                                            right: 8.w),
+                                                        padding:
+                                                            EdgeInsets.symmetric(
+                                                                vertical: 4.h,
+                                                                horizontal:
+                                                                    12.w),
+                                                        decoration: BoxDecoration(
+                                                            color: ColorName
+                                                                .lightIndigoColor,
+                                                            borderRadius:
+                                                                BorderRadius.circular(
+                                                                    16.r)),
+                                                        child: Text(
+                                                            '${results[index].genreIds![i]}',
+                                                            style: TextStyles
+                                                                .tags))),
+                                              ),
                                               SizedBox(
                                                 height: 4.h,
                                               ),
