@@ -10,7 +10,10 @@ class MovieRepository {
   MovieRepository(this._apiServices);
 
   Future<ApiResult<MoviesResponse>> getMovies() async {
-    return await _apiServices.fetchPopularMovies();
+    return await _apiServices.fetchNowShowingMovies();
+  }
 
+  Future<ApiResult<MoviesResponse>> getPopularMovies() async {
+    return await _apiServices.fetchPopularMovies();
   }
 }

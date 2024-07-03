@@ -24,8 +24,14 @@ class $AssetsImagesGen {
   /// File path: assets/images/Star.svg
   SvgGenImage get star => const SvgGenImage('assets/images/Star.svg');
 
+  /// File path: assets/images/clock.svg
+  SvgGenImage get clock => const SvgGenImage('assets/images/clock.svg');
+
+  /// File path: assets/images/play.svg
+  SvgGenImage get play => const SvgGenImage('assets/images/play.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values => [menu, notif, star];
+  List<SvgGenImage> get values => [menu, notif, star, clock, play];
 }
 
 class Assets {

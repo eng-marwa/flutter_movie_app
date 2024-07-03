@@ -1,7 +1,8 @@
 import 'package:bloc/bloc.dart';
 
-import '../repo/movie_repo.dart';
+import '../../repo/movie_repo.dart';
 import 'movie_state.dart';
+
 
 class MovieCubit extends Cubit<MovieState> {
   final MovieRepository _movieRepository;
