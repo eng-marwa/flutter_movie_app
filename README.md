@@ -52,7 +52,7 @@ Run the application:
   ## Screen Shots
  <Table>
   <tr>
-    <td><img src="https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720039050.png" width="400"></td>
     <td><img src="https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720038149.png" width="400"></td>
+    <td><img src="https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720039050.png" width="400"></td>
   </tr>
  </Table>
