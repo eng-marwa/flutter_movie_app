@@ -13,7 +13,7 @@ class OverviewSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text('Description', style: TextStyles.nowShowing),
-        SizedBox(height: 8.h,),
+        SizedBox(height: 16.h,),
         Text(overview,style: TextStyles.description,)
       ],
     );

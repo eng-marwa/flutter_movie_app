@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/features/movie/model/MovieResponse.dart';
 
 import '../../../../core/themes/TextStyles.dart';
+import '../../../../gen/colors.gen.dart';
 
 class CommonDetailsSection extends StatelessWidget {
   final Results movie;
@@ -11,32 +12,27 @@ class CommonDetailsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Column(crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // SliverList(
-        //     delegate: SliverChildBuilderDelegate(childCount: 3,
-        //         (context, index) => Container(
-        //             padding: EdgeInsets
-        //                 .symmetric(
-        //                     vertical: 4.h,
-        //                     horizontal:
-        //                         12.w),
-        //             decoration: BoxDecoration(
-        //                 color: ColorName
-        //                     .lightIndigoColor,
-        //                 borderRadius:
-        //                     BorderRadius.circular(
-        //                         16.r)),
-        //             child: Text('Action',
-        //                 style: TextStyles
-        //                     .tags)))),
+        Wrap(
+            children: List.generate(
+                movie.genreIds!.length,
+                (index) => Container(
+                    margin: EdgeInsets.only(right: 8.w),
+                    padding:
+                        EdgeInsets.symmetric(vertical: 4.h, horizontal: 12.w),
+                    decoration: BoxDecoration(
+                        color: ColorName.lightIndigoColor,
+                        borderRadius: BorderRadius.circular(16.r)),
+                    child: Text('${movie.genreIds![index]}', style: TextStyles.tags)))),
+        SizedBox(height: 16.h),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Length', style: TextStyles.description),
+                Text('Length', style: TextStyles.commonItem),
                 SizedBox(
                   height: 8.h,
                 ),
@@ -49,7 +45,7 @@ class CommonDetailsSection extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Language', style: TextStyles.description),
+                Text('Language', style: TextStyles.commonItem),
                 SizedBox(
                   height: 8.h,
                 ),
@@ -62,7 +58,7 @@ class CommonDetailsSection extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Rating', style: TextStyles.description),
+                Text('Rating', style: TextStyles.commonItem),
                 SizedBox(
                   height: 8.h,
                 ),

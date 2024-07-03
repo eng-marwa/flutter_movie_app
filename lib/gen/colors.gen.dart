@@ -19,6 +19,9 @@ class ColorName {
   /// Color: #E5E4EA
   static const Color borderColor = Color(0xFFE5E4EA);
 
+  /// Color: #9C9C9C
+  static const Color grey9Color = Color(0xFF9C9C9C);
+
   /// Color: #AAA9B
   static const Color greyAAColor = Color(0xAAA9B);
 

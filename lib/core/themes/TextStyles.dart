@@ -46,7 +46,7 @@ class TextStyles {
       fontFamily: FontFamily.merriweather);
 
   static TextStyle get tags => TextStyle(
-      fontSize: 8.sp,
+      fontSize: 10.sp,
       fontWeight: FontWeight.bold,
       fontFamily: FontFamily.merriweather);
 
@@ -54,6 +54,20 @@ class TextStyles {
   static TextStyle get description => TextStyle(
       fontSize: 12.sp,
       fontWeight: FontWeight.normal,
-      color: ColorName.greyAAColor,
+      color: ColorName.titleColor,
       fontFamily: FontFamily.merriweather);
+
+  static TextStyle get commonItem => TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.normal,
+      color: ColorName.grey9Color,
+      fontFamily: FontFamily.merriweather);
+
+static TextStyle get castName => TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.normal,
+      color: ColorName.titleColor,
+      fontFamily: FontFamily.merriweather);
+
+
 }
