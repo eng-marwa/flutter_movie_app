@@ -50,5 +50,5 @@ Run the application:
 * freezed
 
   ## Screen Shots
-  <Table><tr></tr><td><img src='https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720039050.png' width=100 height=100/></td><td></td>tr><img src='https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720038149.png' width=100 height=100/></tr></Table>
+  <Table><tr><td><img src='https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720039050.png' width=300 height=400/></td><td></td>tr><img src='https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720038149.png' width=300 height=400/></tr></Table>
 
