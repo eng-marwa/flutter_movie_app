@@ -1,16 +1,54 @@
-# movie_app
+# Flutter Movie Application
 
-A new Flutter project.
+## **Table of Contents**
 
-## Getting Started
+* [Introduction](#introduction)
+* [Features](#features)
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [ScreenShots](#screenshots)
+* [Flutter Features](#flutter-features)
 
-This project is a starting point for a Flutter application.
+##   Introduction
 
-A few resources to get you started if this is your first Flutter project:
+  The Movie App is a cross-platform mobile application developed in Flutter. It allows users to browse a vast database of movies, view details such as ratings, reviews, and cast information, and discover new releases.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Feature
+
+* fetch a list of now-playing movies
+* fetch a list of popular movies
+* fetch movie cast by movie id
+
+##   Requirements
+
+*   Smartphone: Android or iOS
+*   Internet Connection: Required for application functionality
+*   Flutter SDK: To build and run the application
+
+## Installation
+
+Clone the repository:
+
+`git clone https://github.com/your-username/car-doctor.git](https://github.com/eng-marwa/flutter_movie_app.git
+
+Install dependencies:
+
+`flutter pub get`
+
+Run the application:
+
+`flutter run`
+
+## Flutter Features
+
+*     Bloc State Management(cubit)
+*     Dio Http Client
+*     Retrofit
+*     GetIt Dependency Injection
+*     Injectable Dependency Injection
+*     flutter gen
+*     freezed
+
+  ## Screen Shots
+  <Table><tr></tr><td><img src='https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720038149.png'/></td><td></td>tr><img src='https://github.com/eng-marwa/flutter_movie_app/blob/main/Screenshot_1720039050.png'/></tr></Table>
